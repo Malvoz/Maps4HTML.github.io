@@ -33,7 +33,7 @@ body {
   background: #dbe8d9;
   color: #003810;
 
-  font-family: 'system-ui', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: Verdana, sans-serif;
   line-height: 1.5;
 
   display: grid;
@@ -119,7 +119,7 @@ dfn[data-report]::after {
   line-height: 1;
   padding: 0.3em 0.4em;
   border-radius: 0.3em;
-  margin: .5em .15em .5em .5em;
+  margin: .5em .15em;
   font-size: .75rem;
   white-space: nowrap;
 }
@@ -327,6 +327,10 @@ iframe.gh-stars {
   width: 80px;
   margin-bottom: -11px;
 }
+
+.report-info ~ p {
+  margin-top: 0;
+}
     </style>
   </head>
   <body>
@@ -452,15 +456,19 @@ iframe.gh-stars {
       <ul>
         <li>
           <a href="https://www.w3.org/2020/maps/report">Report on the Joint W3C-OGC Workshop on Maps for the Web</a>
-          <dfn data-report="final"></dfn>
+          <div class="report-info">
+            <dfn data-report="final"></dfn>
+          </div>
           <p>
             The report on the Web mapping workshop that was held by the W3C and OGC.
           </p>
         </li>
         <li>
           <a href="https://maps4html.org/HTML-Map-Element-UseCases-Requirements/">Use Cases and Requirements for Standardizing Web Maps</a>
-          <dfn data-report="draft"></dfn>
-          <iframe class="gh-stars" src="https://ghbtns.com/github-btn.html?user=Maps4HTML&repo=HTML-Map-Element-UseCases-Requirements&type=star&count=true&size=small" width="80" height="25" title="Use Cases and Requirements for Standardizing Web Maps' Github repository"></iframe>
+          <div class="report-info">
+            <dfn data-report="draft"></dfn>
+            <iframe class="gh-stars" src="https://ghbtns.com/github-btn.html?user=Maps4HTML&repo=HTML-Map-Element-UseCases-Requirements&type=star&count=true&size=small" width="80" height="25" title="Use Cases and Requirements for Standardizing Web Maps' Github repository"></iframe>
+          </div>
           <p>
             An overview of why HTML needs a built-in map viewer element,
             which can combine multiple layers into an interactive view.
@@ -468,8 +476,10 @@ iframe.gh-stars {
         </li>
         <li> 
           <a href="https://github.com/Maps4HTML/MapML-Proposal">MapML proposal</a>
-          <dfn data-report="explainer"></dfn>
-          <iframe class="gh-stars" src="https://ghbtns.com/github-btn.html?user=Maps4HTML&repo=MapML-Proposal&type=star&count=true&size=small" width="80" height="25" title="MapML Proposal's Github repository"></iframe>
+          <div class="report-info">
+            <dfn data-report="explainer"></dfn>
+            <iframe class="gh-stars" src="https://ghbtns.com/github-btn.html?user=Maps4HTML&repo=MapML-Proposal&type=star&count=true&size=small" width="80" height="25" title="MapML Proposal's Github repository"></iframe>
+          </div>
           <p>
             An explainer of the MapML proposal.
             This may be the best place to start in trying to understand the substance of the MapML proposal.
@@ -477,8 +487,10 @@ iframe.gh-stars {
         </li>
         <li>
           <a href="https://maps4html.org/MapML/spec/">MapML specification</a>
-          <dfn data-report="draft"></dfn>
-          <iframe class="gh-stars" src="https://ghbtns.com/github-btn.html?user=Maps4HTML&repo=MapML&type=star&count=true&size=small" width="80" height="25" title="MapML specification's Github repository"></iframe>
+          <div class="report-info">
+            <dfn data-report="draft"></dfn>
+            <iframe class="gh-stars" src="https://ghbtns.com/github-btn.html?user=Maps4HTML&repo=MapML&type=star&count=true&size=small" width="80" height="25" title="MapML specification's Github repository"></iframe>
+          </div>
           <p>
             Map Markup Language (MapML) is a proposal for a new document format for describing maps,
             which could contain a mix of tiled images,
@@ -492,8 +504,10 @@ iframe.gh-stars {
         </li>
         <li>
           <a href="https://maps4html.org/UCR-MapML-Matrix/mapml-ucrs-fulfillment-matrix.html">MapML UCR Fulfillment Matrix</a>
-          <dfn data-report="draft"></dfn>
-          <iframe class="gh-stars" src="https://ghbtns.com/github-btn.html?user=Maps4HTML&repo=UCR-MapML-Matrix&type=star&count=true&size=small" width="80" height="25" title="MapML UCR Fulfillment Matrix's Github repository"></iframe>
+          <div class="report-info">
+            <dfn data-report="draft"></dfn>
+            <iframe class="gh-stars" src="https://ghbtns.com/github-btn.html?user=Maps4HTML&repo=UCR-MapML-Matrix&type=star&count=true&size=small" width="80" height="25" title="MapML UCR Fulfillment Matrix's Github repository"></iframe>
+          </div>
           <p>
             Hosted examples and documents how MapML and existing popular web mapping libraries fulfill the
             Use Cases and Requirements for Standardizing Web Maps.
@@ -503,24 +517,32 @@ iframe.gh-stars {
           <ul>
             <li>
               <a href="https://docs.opengeospatial.org/per/17-019.html">Testbed 13</a>
-              <dfn data-report="draft"></dfn>
-              - early community ideas
+              - Early community ideas
+              <div class="report-info">
+                <dfn data-report="draft"></dfn>
+              </div>
             </li>
             <li>
               <a href="https://docs.opengeospatial.org/per/18-023r1.html">Testbed 14</a>
-              <dfn data-report="draft"></dfn>
-              - improved vocabulary
+              - Improved vocabulary
+              <div class="report-info">
+                <dfn data-report="draft"></dfn>
+              </div>
             </li>
             <li>
               <a href="https://docs.opengeospatial.org/per/19-046r1.html">Testbed 15</a>
-              <dfn data-report="draft"></dfn>
-              - improved vector model
+              - Improved vector model
+              <div class="report-info">
+                <dfn data-report="draft"></dfn>
+              </div>
             </li>
           </ul>
         </li>
         <li>
           <a href="https://www.w3.org/community/maps4html/2019/12/09/the-design-of-mapml/">The Design of MapML</a>
-          <dfn data-report="explainer"></dfn>
+          <div class="report-info">
+            <dfn data-report="explainer"></dfn>
+          </div>
           <p>
             A blog post detailing how the MapML proposal relates to the
             <a href="https://www.w3.org/TR/html-design-principles/">HTML Design Principles</a>.
